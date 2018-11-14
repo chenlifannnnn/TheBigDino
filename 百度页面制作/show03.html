@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>广告延迟</title>
+	<script type="text/javascript">
+	function fn1(){
+		var img = document.getElementById('img1');
+		img.style.display = "block";
+		setTimeout("fn2()",2000);
+	}
+	function fn2(){
+		var img = document.getElementById("img1");
+		img.style.display="none";
+	}
+	function init(){
+		setTimeout("fn1()",2000);
+	}
+</script>
+</head>
+<body onload="init()">
+<img src="C:\Users\86255\Desktop\屏幕截图(8).png" style="display: none;" id="img1"/>
+</body>
+</html>
